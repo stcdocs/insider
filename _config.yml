@@ -1,8 +1,8 @@
-title: Just the Docs Template
-description: A starter template for a Jeykll site using the Just the Docs theme!
+title: 市北内卷合作社文档站
+description: 存放各种各样的文档！
 theme: just-the-docs
 
-url: https://just-the-docs.github.io
+url: https://liubanlaobanzhang.github.io/study-together-docs
 
 aux_links:
   Template Repository: https://github.com/just-the-docs/just-the-docs-template
