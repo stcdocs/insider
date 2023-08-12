@@ -1,6 +1,6 @@
 ---
-title: 主页
-layout: 主页
+title: home
+layout: home
 ---
 
 ### 欢迎来到 市北内卷合作社 文档区！
