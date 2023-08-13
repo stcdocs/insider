@@ -1,6 +1,7 @@
 ---
 layuout: Notice
 title: 初高衔接
+---
 
 以下内容为 **必修一** 课程
 
