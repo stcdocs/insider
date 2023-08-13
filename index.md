@@ -7,8 +7,7 @@ nav_order: 1
 <div align="center">
 <img src="https://static.wikia.nocookie.net/minecraft_zh_gamepedia/images/5/54/Lectern_JE3_BE2.png">
 <h1>市北内卷合作社</h1>
-<p>内部官网</p>
-<p class="label label-green">Beta</p>
+<a>内部官网</a> <a class="label label-green">Beta</a>
 </div>
 
 ---
