@@ -8,4 +8,4 @@ title: 公告栏
 
 ## 置顶公告区
 
-[B站知识区网课](/初稿衔接/){: .btn .btn-green .mr-4 }
+[B站知识区网课](/初高衔接/){: .btn .btn-green .mr-4 }
