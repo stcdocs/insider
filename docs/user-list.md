@@ -3,6 +3,7 @@ permalink: /docs/user-list
 layout: default
 nav_order: 3
 title: 成员名单
+has_children: true
 ---
 
 # 成员名单
