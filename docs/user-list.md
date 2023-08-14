@@ -3,7 +3,6 @@ permalink: /docs/user-list
 layout: default
 nav_order: 3
 title: 成员名单
-has_children: true
 ---
 
 # 成员名单
@@ -13,7 +12,7 @@ has_children: true
 {: .important-title }
 > 成员信息
 >
-> 成员总计`37`人，其中连接到 `Chat.Svc.New` 服务的有 `36` 人，管理组 `4` 人。
+> 成员总计 37 人，其中连接到 Chat.Svc.New 服务的有 36 人，管理组 4 人。
 
 
 |序号|群昵称|操作|
