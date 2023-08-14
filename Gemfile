@@ -7,5 +7,5 @@ gem "just-the-docs", "0.5.4" # pinned to the current release
 # gem "just-the-docs"        # always download the latest release
 
 group :jekyll_plugins do
-   gem "kramdown"
+   gem install "kramdown"
 end
