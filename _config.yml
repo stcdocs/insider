@@ -6,8 +6,9 @@ url: https://liubanlaobanzhang.github.io/study-together-docs
 
 aux_links:
   帮助编辑此文档库: https://github.com/liubanlaobanzhang/study-together-docs
-
-markdown: kramdown
+plugins:
+  - jekyll-default-layout
+  - kramdown
 
 kramdown:
   syntax_highlighter_opts:
