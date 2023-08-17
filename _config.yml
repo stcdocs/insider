@@ -6,3 +6,6 @@ url: https://liubanlaobanzhang.github.io/study-together-docs
 
 aux_links:
   帮助编辑此文档库: https://github.com/liubanlaobanzhang/study-together-docs
+
+plugins:
+  - kramdown
