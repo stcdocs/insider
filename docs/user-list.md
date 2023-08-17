@@ -8,7 +8,7 @@ has_children: true
 
 # 成员名单
 
-![](https://img.shields.io/badge/上次更新-2023.8.14-a)
+![](https://img.shields.io/badge/上次更新-2023.8.18-a)
 
 {: .important-title }
 > 成员信息
