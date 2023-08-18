@@ -7,20 +7,34 @@ search_exclude: true
 ---
 
 <h1>404</h1>
-<video id="myVideo" src="https://ghproxy.com/https://raw.githubusercontent.com/liubanlaobanzhang/study-together-docs/main/assets/404.mp4" autoplay controls>
-    您的浏览器不支持播放此视频。
-  </video>
-  <script>
-    // 获取视频元素
-    var video = document.getElementById("myVideo");
-    // 定义要跳转的页面地址
-    var url = "{{ '/' | relative_url }}";
-    // 监听视频播放结束事件
-    video.addEventListener("ended", function() {
-      // 跳转到指定页面
-      window.location.href = url;
-    });
-  </script>
+
+<style>
+    .video-container {
+      width: 500px;
+      height: 300px;
+    }
+    .video-element {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+  </style>
+  <div class="video-container">
+    <video id="myVideo" src="https://ghproxy.com/https://raw.githubusercontent.com/liubanlaobanzhang/study-together-docs/main/assets/404.mp4" autoplay>
+        您的浏览器不支持播放此视频。
+    </video>
+    <script>
+        // 获取视频元素
+        var video = document.getElementById("myVideo");
+        // 定义要跳转的页面地址
+        var url = "{{ '/' | relative_url }}";
+        // 监听视频播放结束事件
+        video.addEventListener("ended", function() {
+        // 跳转到指定页面
+        window.location.href = url;
+        });
+    </script>
+  </div>
   
 <h3></h3>
 <br>
