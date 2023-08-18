@@ -7,7 +7,21 @@ search_exclude: true
 ---
 
 <h1>404</h1>
-
-<h3>此网页可能已经过时或仍在施工。</h3>
+<video id="myVideo" src="https://ghproxy.com/https://raw.githubusercontent.com/liubanlaobanzhang/study-together-docs/main/assets/404.mp4" autoplay controls>
+    您的浏览器不支持播放此视频。
+  </video>
+  <script>
+    // 获取视频元素
+    var video = document.getElementById("myVideo");
+    // 定义要跳转的页面地址
+    var url = "{{ '/' | relative_url }}";
+    // 监听视频播放结束事件
+    video.addEventListener("ended", function() {
+      // 跳转到指定页面
+      window.location.href = url;
+    });
+  </script>
+  
+<h3></h3>
 <br>
-<a class="btn btn-blue" href="{{ '/' | relative_url }}">返回主页</a>
+如果没有反应，请点击<a class="btn btn-blue" href="{{ '/' | relative_url }}">返回主页</a>
