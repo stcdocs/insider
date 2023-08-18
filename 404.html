@@ -6,22 +6,17 @@ nav_exclude: true
 search_exclude: true
 ---
 
-<h1>404</h1>
-
-
-  <div class="video-container">
-    <video id="myVideo" src="https://ghproxy.com/https://raw.githubusercontent.com/liubanlaobanzhang/study-together-docs/main/assets/404.mp4" autoplay="true">
-        您的浏览器不支持播放此视频。
-    </video>
-    <script>
+<video autoplay="autoplay">
+        <source src="https://laobanzhang0-my.sharepoint.com/personal/laobanzhang_laobanzhang0_onmicrosoft_com/_layouts/15/download.aspx?UniqueId=73bcd2d7%2Db06f%2D4444%2D8d94%2D0409fe3cb982" type="video/mp4" />
+      Your browser does not support the video tag.
+  </video>
+<script>
         var video = document.getElementById("myVideo");
         var url = "{{ '/' | relative_url }}";
         video.addEventListener("ended", function() {
         window.location.href = url;
         });
-    </script>
-  </div>
+</script>
   
-<h3></h3>
 <br>
-如果没有反应，请点击<a class="btn btn-blue" href="{{ '/' | relative_url }}">返回主页</a>
+如果没有反应，请点击：<p class="btn btn-blue" href="{{ '/' | relative_url }}">返回主页</p>
