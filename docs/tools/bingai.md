@@ -10,7 +10,7 @@ title: Bing AI
 {: .warning-title }
 > 对此功能的说明
 >
-> 由于微软最近更新，未在已搭建的 BingAI 页面的“设置”中填写正确 Cookie 的将无法正常使用。若不放心账户安全，请 `挂梯子` 或 [`自行部署`](https://laogou717.com/){: .btn .btn-purple }
+> 由于微软最近更新，未在已搭建的 BingAI 页面的“设置”中填写正确 Cookie 的将无法正常使用。若不放心账户安全，请 `挂梯子` 或 [`自行部署`](https://laogou717.com/)。
 >
 > ![](https://ghproxy.com/https://raw.githubusercontent.com/liubanlaobanzhang/study-together-docs/main/assets/bingai-nocookie.png)
 
