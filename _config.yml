@@ -7,21 +7,53 @@ url: https://liubanlaobanzhang.github.io/study-together-docs
 plugins:
   - kramdown
 
-callouts_level: quiet # or loud
+callouts_level: quiet
 callouts:
   highlight:
     color: yellow
   important:
-    title: Important
+    title: 信息
     color: blue
   new:
-    title: New
+    title: 信息
     color: green
   note:
-    title: Note
+    title: 信息
     color: purple
   warning:
-    title: Warning
+    title: 警告
+    color: red
+  # 以下为新加
+  orange:
+    title: 注意
+    color: orange
+  yellow:
+    title: 注意
+    color: yellow
+  blue:
+    title: 公告
+    color: blue
+  green:
+    title: 公告
+    color: green
+  purple:
+    title: 信息
+    color: purple
+  red:
+    title: 注意
+    color: red
+  # 以下无标题
+  orangea:
+    color: orange
+  yellowa:
+    color: yellow
+  bluea:
+    color: blue
+  greena:
+    color: green
+  purplea:
+    color: purple
+  reda:
     color: red
 
 back_to_top: true
