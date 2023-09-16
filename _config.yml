@@ -24,9 +24,6 @@ callouts:
     title: 警告
     color: red
   # 以下为新加
-  orange:
-    title: 注意
-    color: orange
   yellow:
     title: 注意
     color: yellow
@@ -43,8 +40,6 @@ callouts:
     title: 注意
     color: red
   # 以下无标题
-  orangea:
-    color: orange
   yellowa:
     color: yellow
   bluea:
