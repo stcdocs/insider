@@ -6,16 +6,12 @@ nav_exclude: true
 search_exclude: true
 ---
 
-<audio class="myVideo" autoplay="autoplay" controls="controls">
-        <source src="https://ghproxy.com/https://raw.githubusercontent.com/liubanlaobanzhang/study-together-docs/main/assets/tegi2-loapk.mp3" type="audio/mp3" />
-        前面的区域以后再来探索吧？
-  </audio>
+<audio id="audio" src="https://ghproxy.com/https://raw.githubusercontent.com/liubanlaobanzhang/study-together-docs/main/assets/tegi2-loapk.mp3" autoplay="autoplay" controls="controls"></audio>
 <script>
-        var video = document.getElementById("myVideo");
-        var url = "{{ '/' | relative_url }}";
-        audio.addEventListener("ended", function() {
-        window.location.href = url;
-        });
+  var audio = document.getElementById("audio");
+  audio.addEventListener("ended", function() {
+    window.location.href = "https://liubanlaobanzhang.github.io/study-together-docs/";
+  });
 </script>
-  
-<p class="btn btn-blue" href="{{ '/' | relative_url }}">返回主页</p>
+
+<p class="btn btn-blue" href="https://liubanlaobanzhang.github.io/study-together-docs/">返回主页</p>
