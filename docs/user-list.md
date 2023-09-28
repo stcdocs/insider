@@ -27,7 +27,7 @@ has_children: true
 |7|Eric|[查看](/study-together-docs/docs/user-list/7.html){: .btn .btn-blue }|
 |8|秋后蚂蚱|[查看](/study-together-docs/docs/user-list/8.html){: .btn .btn-blue }|
 |9|海尔学校 李元策|[查看](/study-together-docs/docs/user-list/9.html){: .btn .btn-blue }|
-|10|穹苍|[查看](/study-together-docs/docs/user-list/10.html){: .btn .btn-blue }|
+|10|穹苍|[查看](10.html){: .btn .btn-blue }|
 |11|Q|[查看](/study-together-docs/docs/user-list/11.html){: .btn .btn-blue }|
 |12|Michael rock|[查看](/study-together-docs/docs/user-list/12.html){: .btn .btn-blue }|
 |13|故里|[查看](/study-together-docs/docs/user-list/13.html){: .btn .btn-blue }|

@@ -12,8 +12,8 @@ title: 公告栏
 > 置顶二维码
 >
 > 新增内容：
-> - [高中数学知识思维导图](/study-together-docs/docs/notice/高中数学知识思维导图.html)
-> - [中国历史时间轴](study-together-docs/docs/notice/中国历史时间轴.html)
+> - [高中数学知识思维导图](/study-together-docs/docs/topqr/高中数学知识思维导图.html)
+> - [中国历史时间轴](study-together-docs/docs/topqr/中国历史时间轴.html)
 
 {: .warning-title }
 > 注意
