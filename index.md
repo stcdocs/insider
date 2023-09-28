@@ -13,6 +13,9 @@ nav_order: 1
 ---
 ## 置顶公告
 
+{: .reda }
+> (新) 选科变化通知 [点击查看>>](/study-together-docs/docs/notice/2023-9-28-选科变化通知.html)
+
 {: .blue-title }
 > 置顶二维码
 >

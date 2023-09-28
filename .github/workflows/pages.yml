@@ -44,7 +44,6 @@ jobs:
         # Outputs to the './_site' directory by default
         run: |
           bundle config unset deployment
-          bundle update
           bundle install
           bundle exec jekyll build --trace --baseurl "${{ steps.pages.outputs.base_path }}"
         env:
