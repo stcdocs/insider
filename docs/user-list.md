@@ -22,7 +22,7 @@ has_children: true
 |2|我不是腚诺|[查看](/study-together-docs/docs/user-list/2.html){: .btn .btn-blue }|
 |3|腼腆内向楚姐姐|[查看](/study-together-docs/docs/user-list/3.html){: .btn .btn-blue }|
 |4|15王浩铭|[查看](/study-together-docs/docs/user-list/4.html){: .btn .btn-blue }|
-|5|李昊蛏|[查看](/study-together-docs/docs/user-list/5.html){: .btn .btn-blue }|
+|5|李昊蛏|[查看](/study-together-docs/docs/user-list/5.html){: .btn .btn-green }|
 |6|渝欢|[查看](/study-together-docs/docs/user-list/6.html){: .btn .btn-blue }|
 |7|Eric|[查看](/study-together-docs/docs/user-list/7.html){: .btn .btn-blue }|
 |8|秋后蚂蚱|[查看](/study-together-docs/docs/user-list/8.html){: .btn .btn-blue }|
