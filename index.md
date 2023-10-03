@@ -13,6 +13,9 @@ nav_order: 1
 ---
 ## 置顶公告
 
+{: .purplea }
+> [@一生儿](https://space.bilibili.com/2036187097) 更新生物基础大合集了！[点击查看](/study-together-docs/docs/notice/B站知识区网课.html)
+
 {: .reda }
 > (新) 选科变化通知 [点击查看>>](/study-together-docs/docs/notice/2023-9-28-选科变化通知.html)
 
