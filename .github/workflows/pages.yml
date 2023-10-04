@@ -44,8 +44,6 @@ jobs:
       - name: Build with Jekyll
         # Outputs to the './_site' directory by default
         run: |
-          bundle config unset deployment
-          bundle install
           bundle exec jekyll build --trace --baseurl "${{ steps.pages.outputs.base_path }}"
         env:
           JEKYLL_ENV: production
@@ -93,7 +91,7 @@ jobs:
         uses: actions/upload-pages-artifact@v1
 
   # Deployment job
-  deploy:
+  Deploy:
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
