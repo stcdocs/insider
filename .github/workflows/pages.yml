@@ -25,8 +25,47 @@ concurrency:
   cancel-in-progress: true
 
 jobs:
+  Change-To-Build-Mod-A:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+        with:
+          ref: 'Failed'
+      - name: Setup Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: '3.1' # Not needed with a .ruby-version file
+          bundler-cache: false # runs 'bundle install' and caches installed gems automatically
+          cache-version: 0 # Increment this number if you need to re-download cached gems
+      - name: Setup Pages
+        id: pages
+        uses: actions/configure-pages@v3
+      - name: Build with Jekyll
+        # Outputs to the './_site' directory by default
+        run: |
+          bundle config unset deployment
+          bundle install
+          bundle exec jekyll build --trace --baseurl "${{ steps.pages.outputs.base_path }}"
+        env:
+          JEKYLL_ENV: production
+      - name: Upload artifact
+        # Automatically uploads an artifact from the './_site' directory by default
+        uses: actions/upload-pages-artifact@v1
+
+  Change-To-Build-Mod:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    needs: Change-To-Build-Mod-A
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v2
+
   # Build job
-  build:
+  Build:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -58,7 +97,7 @@ jobs:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
-    needs: build
+    needs: Build
     steps:
       - name: Deploy to GitHub Pages
         id: deployment
