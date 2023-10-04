@@ -15,6 +15,7 @@ nav_order: 1
 
 {: .blue-title }
 > 置顶二维码
+>
 > 新增内容：
 > - [政治提纲](/study-together-docs/docs/topqr/政治提纲.html) _2023/10/4 王浩铭_
 
