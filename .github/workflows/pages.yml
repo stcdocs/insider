@@ -4,11 +4,13 @@
 # documentation.
 
 # Sample workflow for building and deploying a Jekyll site to GitHub Pages
-name: 合作社主页部署
+name: 合作社主页部署AAA
 
 on:
   push:
     branches: ["main"]
+    paths-ignore:
+      - '**.stop-running'
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
@@ -25,7 +27,7 @@ concurrency:
   cancel-in-progress: true
 
 jobs:
-  Change-To-Build-Mod-A:
+  Change-To-Build-Mod-A: # 先进入维护模式
     runs-on: ubuntu-latest
     steps:
       - name: 获取 Failed 界面
@@ -42,14 +44,12 @@ jobs:
         id: pages
         uses: actions/configure-pages@v3
       - name: 使用 Jekyll 部署
-        # Outputs to the './_site' directory by default
         run: |
           bundle install
           bundle exec jekyll build --trace --baseurl "${{ steps.pages.outputs.base_path }}"
         env:
           JEKYLL_ENV: production
       - name: 上传部署产物（维护页面）
-        # Automatically uploads an artifact from the './_site' directory by default
         uses: actions/upload-pages-artifact@v1
 
   Change-To-Build-Mod:
