@@ -3,6 +3,32 @@ title: "欢迎页"
 layout: home
 nav_order: 1
 ---
+<script>
+// 设置倒计时的目标时间
+var targetDate = new Date("Jun 7, 2026 00:09:00").getTime();
+
+// 每秒更新一次倒计时
+var x = setInterval(function() {
+
+  // 获取当前时间
+  var now = new Date().getTime();
+    
+  // 计算时间差
+  var distance = targetDate - now;
+    
+  // 计算天、时、分、秒
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    
+  // 显示倒计时结果
+  document.getElementById("countdown").innerHTML = days + "天 ";
+    
+  // 如果倒计时结束，显示提示信息
+  if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("countdown").innerHTML = "今天高考";
+  }
+}, 1000);
+</script>
 
 <div align="center">
 <img src="https://static.wikia.nocookie.net/minecraft_zh_gamepedia/images/5/54/Lectern_JE3_BE2.png">
@@ -12,6 +38,8 @@ nav_order: 1
 
 ---
 ## 置顶公告
+
+<blockquote class="note-title"><a>距离 2026 高考</a><a id="countdown"></a></blockquote>
 
 {: .blue-title }
 > 置顶二维码
