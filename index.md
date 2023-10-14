@@ -9,16 +9,15 @@ var x = setInterval(function() {
   var now = new Date().getTime();
   var distance = targetDate - now;
   var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-  document.getElementById("countdown").innerHTML = days + "天 ";
+  document.getElementById("countdowna").innerHTML = "距离 2023 高一上期中检测 还有 " + days + " 天";
   if (distance < 0) {
     clearInterval(x);
-    document.getElementById("countdown").innerHTML = "0";
+    document.getElementById("countdowna").innerHTML = days + "2023 高一上期中检测 就是今天";
   }
 }, 1000);
 </script>
 
-<blockquote class="reda"><a>距离 2023 高一上期中检测 还有 </a><a id="countdowna"></a></blockquote>
-
+<blockquote class="reda"><a id="countdowna"></a><a> | </a><a href="/study-together-docs/docs/notice/2023-10-14-2023期中省联考通知.html"> 更多信息 ></a></blockquote>
 
 <div align="center">
 <img src="https://static.wikia.nocookie.net/minecraft_zh_gamepedia/images/5/54/Lectern_JE3_BE2.png">
@@ -35,14 +34,14 @@ var x = setInterval(function() {
   var now = new Date().getTime();
   var distance = targetDate - now;
   var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-  document.getElementById("countdown").innerHTML = days + "天 ";
+  document.getElementById("countdown").innerHTML = days + " 天";
   if (distance < 0) {
     clearInterval(x);
     document.getElementById("countdown").innerHTML = "今天高考";
   }
 }, 1000);
 </script>
-<blockquote class="note-title"><a>距离 2026 高考</a><a id="countdown"></a></blockquote>
+<blockquote class="note-title"><a>距离 2026 高考 </a><a id="countdown"></a></blockquote>
 
 {: .blue-title }
 > 置顶二维码
