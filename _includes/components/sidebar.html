@@ -11,12 +11,45 @@
 {%- endcomment -%}
 
 <div class="side-bar">
+  <!--标题部分-->
   <div class="site-header" role="banner">
     <a href="{{ '/' | relative_url }}" class="site-title lh-tight">{% include title.html %}</a>
     <button id="menu-button" class="site-button btn-reset" aria-label="Toggle menu" aria-pressed="false">
       <svg viewBox="0 0 24 24" class="icon" aria-hidden="true"><use xlink:href="#svg-menu"></use></svg>
     </button>
   </div>
+
+  <!--倒计时模块-->
+  <script>
+    var targetDateA = new Date("Nov 16, 2023 00:00:00").getTime();
+    var x = setInterval(function() {
+      var now = new Date().getTime();
+      var distanceA = targetDateA - now;
+      var daysA = Math.floor(distanceA / (1000 * 60 * 60 * 24));
+      document.getElementById("countdowna").innerHTML = "距离 2023 高一上期中检测 还有 " + daysA + " 天";
+      if (distanceA < 0) {
+        clearInterval(x);
+        document.getElementById("countdowna").innerHTML = daysA + "2023 高一上期中检测 就是今天";
+      }
+    }, 1000);
+    </script>    
+  <script>
+    var targetDate = new Date("Jun 7, 2026 00:09:00").getTime();
+    var x = setInterval(function() {
+      var now = new Date().getTime();
+      var distance = targetDate - now;
+      var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      document.getElementById("countdown").innerHTML = days + " 天";
+      if (distance < 0) {
+        clearInterval(x);
+        document.getElementById("countdown").innerHTML = "今天高考";
+      }
+    }, 1000);
+    </script>
+  <div align="center">
+    <a id="countdowna" class="label label-green"></a><a>  </a><a id="countdown" class="label label-blue"></a><br><br>
+  </div>
+
   <nav aria-label="Main" id="site-nav" class="site-nav">
     {% assign pages_top_size = site.html_pages
           | where_exp:"item", "item.title != nil"
@@ -69,22 +102,8 @@
       {% endfor %}
     {% endif %}
   </nav>
+  <p>此页面基于 Just The Docs 打造。</p>
 
-  <script>
-    var targetDate = new Date("Jun 7, 2026 00:09:00").getTime();
-    var x = setInterval(function() {
-      var now = new Date().getTime();
-      var distance = targetDate - now;
-      var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-      document.getElementById("countdown").innerHTML = days + " 天";
-      if (distance < 0) {
-        clearInterval(x);
-        document.getElementById("countdown").innerHTML = "今天高考";
-      }
-    }, 1000);
-    </script>
-    
-  <a id="countdown" class="label label-green"></a>
 
   {% capture nav_footer_custom %}
     {%- include nav_footer_custom.html -%}
