@@ -48,7 +48,7 @@
     </script>
 
   <nav aria-label="Main" id="site-nav" class="site-nav">
-    <a id="countdownaSide" class="label label-green"></a><a id="countdownSide" class="label label-blue"></a>
+    <div align="center"><a id="countdownaSide" class="label label-green"></a><a id="countdownSide" class="label label-blue"></a></div>
     {% assign pages_top_size = site.html_pages
           | where_exp:"item", "item.title != nil"
           | where_exp:"item", "item.parent == nil"
