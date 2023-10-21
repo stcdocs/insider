@@ -70,6 +70,22 @@
     {% endif %}
   </nav>
 
+  <script>
+    var targetDate = new Date("Jun 7, 2026 00:09:00").getTime();
+    var x = setInterval(function() {
+      var now = new Date().getTime();
+      var distance = targetDate - now;
+      var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      document.getElementById("countdown").innerHTML = days + " 天";
+      if (distance < 0) {
+        clearInterval(x);
+        document.getElementById("countdown").innerHTML = "今天高考";
+      }
+    }, 1000);
+    </script>
+    
+  <a id="countdown" class="label label-green"></a>
+
   {% capture nav_footer_custom %}
     {%- include nav_footer_custom.html -%}
   {% endcapture %}

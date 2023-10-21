@@ -15,7 +15,7 @@ has_children: true
 
 ## 区域1：OneDrive [点击进入](https://laobanzhang0-my.sharepoint.com/:f:/g/personal/laobanzhang_laobanzhang0_onmicrosoft_com/EkRSiAb1zWFIg52JlFHQcnsBE0WIqqGt6HO1XzJVdow52w)
 
-![](https://ghproxy.com/https://raw.githubusercontent.com/liubanlaobanzhang/study-together-assets/main/assets/TopQR-1.png)
+[![](https://ghproxy.com/https://raw.githubusercontent.com/liubanlaobanzhang/study-together-assets/main/assets/TopQR-1.png)](https://laobanzhang0-my.sharepoint.com/:f:/g/personal/laobanzhang_laobanzhang0_onmicrosoft_com/EkRSiAb1zWFIg52JlFHQcnsBE0WIqqGt6HO1XzJVdow52w)
 
 ---
 
