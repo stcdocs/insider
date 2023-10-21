@@ -47,9 +47,8 @@
     }, 1000);
     </script>
 
-  <a id="countdownaSide" class="label label-green"></a><a id="countdownSide" class="label label-blue"></a>
-
   <nav aria-label="Main" id="site-nav" class="site-nav">
+    <a id="countdownaSide" class="label label-green"></a><a id="countdownSide" class="label label-blue"></a>
     {% assign pages_top_size = site.html_pages
           | where_exp:"item", "item.title != nil"
           | where_exp:"item", "item.parent == nil"
@@ -101,8 +100,6 @@
       {% endfor %}
     {% endif %}
   </nav>
-  <p fontsize="8px">此页面基于 Just The Docs 打造。</p>
-
 
   {% capture nav_footer_custom %}
     {%- include nav_footer_custom.html -%}
