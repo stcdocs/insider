@@ -26,10 +26,10 @@
       var now = new Date().getTime();
       var distanceA = targetDateA - now;
       var daysA = Math.floor(distanceA / (1000 * 60 * 60 * 24));
-      document.getElementById("countdowna").innerHTML = daysA + " 天";
+      document.getElementById("countdownaSide").innerHTML = daysA + " 天";
       if (distanceA < 0) {
         clearInterval(x);
-        document.getElementById("countdowna").innerHTML = ""
+        document.getElementById("countdownaSide").innerHTML = ""
       }
     }, 1000);
     </script>    
@@ -39,16 +39,15 @@
       var now = new Date().getTime();
       var distance = targetDate - now;
       var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-      document.getElementById("countdown").innerHTML = days + " 天";
+      document.getElementById("countdownSide").innerHTML = days + " 天";
       if (distance < 0) {
         clearInterval(x);
-        document.getElementById("countdown").innerHTML = "今天高考";
+        document.getElementById("countdownSide").innerHTML = "今天高考";
       }
     }, 1000);
     </script>
-  <div align="center">
-    <a id="countdowna" class="label label-green"></a><a>  </a><a id="countdown" class="label label-blue"></a><br><br>
-  </div>
+
+  <a id="countdownaSide" class="label label-green"></a><a>  </a><a id="countdownSide" class="label label-blue"></a><br><br>
 
   <nav aria-label="Main" id="site-nav" class="site-nav">
     {% assign pages_top_size = site.html_pages
