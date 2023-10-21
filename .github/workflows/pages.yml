@@ -68,6 +68,7 @@ jobs:
 
   Prepare-For-Build-Mod: # 先进入维护模式
     if: failure()
+    needs: Build
     runs-on: ubuntu-latest
     steps:
       - name: 获取 Failed 界面
