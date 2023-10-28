@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: table_wrappers
 ---
 
 <!DOCTYPE html>
@@ -39,4 +39,3 @@ layout: default
   {% endif %}
 </body>
 </html>
-
