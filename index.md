@@ -4,7 +4,7 @@ layout: home
 nav_order: 1
 ---
 
-{% include_relative public/top_notice.md %}
+{% include public/top_notice.md %}
 
 <div align="center">
 <img src="https://static.wikia.nocookie.net/minecraft_zh_gamepedia/images/5/54/Lectern_JE3_BE2.png">
