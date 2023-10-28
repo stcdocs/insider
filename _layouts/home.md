@@ -1,5 +1,5 @@
 ---
-layout: table_wrappers
+layout: default
 ---
 
 <!DOCTYPE html>
@@ -16,7 +16,6 @@ layout: table_wrappers
       {% include components/breadcrumbs.html %}
       <div id="main-content" class="main-content">
         <main>
-          {% include public/notice.md %}
           {% if site.heading_anchors != false %}
             {% include vendor/anchor_headings.html html=content beforeHeading="true" anchorBody="<svg viewBox=\"0 0 16 16\" aria-hidden=\"true\"><use xlink:href=\"#svg-link\"></use></svg>" anchorClass="anchor-heading" anchorAttrs="aria-labelledby=\"%html_id%\"" %}
           {% else %}
@@ -40,3 +39,4 @@ layout: table_wrappers
   {% endif %}
 </body>
 </html>
+

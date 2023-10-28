@@ -1,6 +1,6 @@
 ---
 permalink: /docs/notice
-layout: default
+layout: home
 nav_order: 3
 has_children: true
 title: 公告栏
