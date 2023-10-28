@@ -13,7 +13,7 @@ nav_order: 1
 </div>
 
 ---
-{% include notice.md %}
+{% include public/notice.md %}
 
 ## 仪表盘
 
