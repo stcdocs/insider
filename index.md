@@ -26,7 +26,7 @@ var x = setInterval(function() {
 </div>
 
 ---
-{% include notice.html %}
+{% include notice.md %}
 
 ## 仪表盘
 
