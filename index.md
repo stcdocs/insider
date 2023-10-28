@@ -13,6 +13,8 @@ nav_order: 1
 </div>
 
 ---
+## 公告
+
 {% include public/notice.md %}
 
 ## 仪表盘

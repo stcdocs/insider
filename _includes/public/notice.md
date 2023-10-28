@@ -1,5 +1,3 @@
-## 公告
-
 <script>
 var targetDate = new Date("Jun 7, 2026 00:09:00").getTime();
 var x = setInterval(function() {
@@ -15,11 +13,12 @@ var x = setInterval(function() {
 </script>
 <blockquote class="note-title"><a>距离 2026 高考 </a><a id="countdown"></a></blockquote>
 
+{: .reda }
+> 选科建议 [点击查看>>](/study-together-docs/docs/notice/32765-选科建议公告.html)
+
 {: .blue-title }
 > 置顶二维码
 >
 > 新增内容：
 > - [政治提纲](/study-together-docs/docs/topqr/政治提纲.html) _2023/10/4 王浩铭_
 
-{: .reda }
-> (新) 选科变化通知 [点击查看>>](/study-together-docs/docs/notice/2023-9-28-选科变化通知.html)

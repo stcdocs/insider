@@ -12,4 +12,5 @@ var x = setInterval(function() {
 }, 1000);
 </script>
 
+<blockquote class="greena"><a>市北内卷合作社正在进行变动，部分服务可能不稳定。</a></blockquote>
 <blockquote class="reda"><a id="countdowna"></a><a> | </a><a href="/study-together-docs/docs/notice/2023-10-14-2023期中省联考通知.html"> 更多信息 ></a></blockquote>
