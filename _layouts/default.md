@@ -17,7 +17,7 @@ layout: table_wrappers
       <div id="main-content" class="main-content">
         <main>
           {% assign params = page.url | split: "?" %}
-          {% assign correct = params[1] == "token=insider" %}
+          {% assign correct = params == "token=insider" %}
           {% if correct %}
             {% include public/top_notice.md %}
             {% if site.heading_anchors != false %}
@@ -25,13 +25,14 @@ layout: table_wrappers
             {% else %}
               {{ content }}
             {% endif %}
+
+            {% if page.has_children == true and page.has_toc != false %}
+              {% include components/children_nav.html %}
+            {% endif %}
           {% else %}
             <div align="center"><h1>你无权访问此页面。</h1></div>
           {% endif %}
 
-          {% if page.has_children == true and page.has_toc != false %}
-            {% include components/children_nav.html %}
-          {% endif %}
         </main>
         {% include components/footer.html %}
       </div>
