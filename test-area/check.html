@@ -1,0 +1,23 @@
+<html>
+<head>
+<script>
+// 获取链接?后面的参数
+var url = window.location.href;
+var params = url.split("?")[1];
+// 判断参数是否正确
+var correct = params == "token=insider";
+</script>
+</head>
+<body>
+<h1>示例页面</h1>
+<p id="content"></p>
+<script>
+// 若参数正确则显示内容A，否则显示内容B
+if (correct) {
+  document.getElementById("content").innerHTML = "内容A";
+} else {
+  document.getElementById("content").innerHTML = "内容B";
+}
+</script>
+</body>
+</html>
