@@ -17,8 +17,7 @@ layout: table_wrappers
       <div id="main-content" class="main-content">
         <main>
           {% assign params = page.url | split: "?" %}
-          {% assign correct = params == "token=insider" %}
-          {% if correct %}
+          {% if params == "token=insider" %}
             {% include public/top_notice.md %}
             {% if site.heading_anchors != false %}
               {% include vendor/anchor_headings.html html=content beforeHeading="true" anchorBody="<svg viewBox=\"0 0 16 16\" aria-hidden=\"true\"><use xlink:href=\"#svg-link\"></use></svg>" anchorClass="anchor-heading" anchorAttrs="aria-labelledby=\"%html_id%\"" %}
