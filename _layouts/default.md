@@ -16,22 +16,16 @@ layout: table_wrappers
       {% include components/breadcrumbs.html %}
       <div id="main-content" class="main-content">
         <main>
-          {% assign params = page.url | split: "?" %}
-          {% if params == "?token=insider" %}
-            {% include public/top_notice.md %}
-            {% if site.heading_anchors != false %}
-              {% include vendor/anchor_headings.html html=content beforeHeading="true" anchorBody="<svg viewBox=\"0 0 16 16\" aria-hidden=\"true\"><use xlink:href=\"#svg-link\"></use></svg>" anchorClass="anchor-heading" anchorAttrs="aria-labelledby=\"%html_id%\"" %}
-            {% else %}
-              {{ content }}
-            {% endif %}
-
-            {% if page.has_children == true and page.has_toc != false %}
-              {% include components/children_nav.html %}
-            {% endif %}
+          {% include public/top_notice.md %}
+          {% if site.heading_anchors != false %}
+            {% include vendor/anchor_headings.html html=content beforeHeading="true" anchorBody="<svg viewBox=\"0 0 16 16\" aria-hidden=\"true\"><use xlink:href=\"#svg-link\"></use></svg>" anchorClass="anchor-heading" anchorAttrs="aria-labelledby=\"%html_id%\"" %}
           {% else %}
-            <div align="center"><h1>你无权访问此页面。</h1></div>
+            {{ content }}
           {% endif %}
 
+          {% if page.has_children == true and page.has_toc != false %}
+            {% include components/children_nav.html %}
+          {% endif %}
         </main>
         {% include components/footer.html %}
       </div>
