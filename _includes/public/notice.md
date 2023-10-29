@@ -19,6 +19,6 @@ var x = setInterval(function() {
 {: .blue-title }
 > 置顶二维码
 >
-> 新增内容：
-> - [政治提纲](/study-together-docs/docs/topqr/政治提纲.html) _2023/10/4 王浩铭_
+> 更新内容：
+> - [必修一政治提纲（电子版）](/study-together-docs/docs/topqr/政治提纲.html) _2023/10/29 王浩铭_
 
