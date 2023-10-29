@@ -19,12 +19,14 @@ layout: table_wrappers
           {% assign params = page.url | split: "?" %}
           {% assign correct = params[1] == "token=insider" %}
           {% if correct %}
-          {% include public/top_notice.md %}
-          {% if site.heading_anchors != false %}
-            {% include vendor/anchor_headings.html html=content beforeHeading="true" anchorBody="<svg viewBox=\"0 0 16 16\" aria-hidden=\"true\"><use xlink:href=\"#svg-link\"></use></svg>" anchorClass="anchor-heading" anchorAttrs="aria-labelledby=\"%html_id%\"" %}
+            {% include public/top_notice.md %}
+            {% if site.heading_anchors != false %}
+              {% include vendor/anchor_headings.html html=content beforeHeading="true" anchorBody="<svg viewBox=\"0 0 16 16\" aria-hidden=\"true\"><use xlink:href=\"#svg-link\"></use></svg>" anchorClass="anchor-heading" anchorAttrs="aria-labelledby=\"%html_id%\"" %}
+            {% else %}
+              {{ content }}
+            {% endif %}
           {% else %}
-            {{ content }}
-          {% endif %}
+            <div align="center"><h1>你无权访问此页面。</h1></div>
           {% endif %}
 
           {% if page.has_children == true and page.has_toc != false %}
