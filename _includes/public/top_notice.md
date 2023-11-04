@@ -3,11 +3,11 @@ var targetDateA = new Date("Nov 16, 2023 00:00:00").getTime();
 var x = setInterval(function() {
   var now = new Date().getTime();
   var distanceA = targetDateA - now;
-  var daysA = Math.floor(distanceA / (1000 * 60 * 60 * 24));
+  var daysA = Math.floor(distanceA / (1000 * 60 * 60 * 24))+1 ;
   document.getElementById("countdowna").innerHTML = "距离 2023 高一上期中检测 还有 " + daysA + " 天";
   if (distanceA < 0) {
     clearInterval(x);
-    document.getElementById("countdowna").innerHTML = daysA + "2023 高一上期中检测 就是今天";
+    document.getElementById("countdowna").innerHTML = daysA + "2023 高一上期中检测 正在进行";
   }
 }, 1000);
 </script>
