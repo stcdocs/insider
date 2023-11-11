@@ -29,7 +29,7 @@
 {% for child in sorted_pages %}
   <li>
     <a href="{{ child.url | relative_url }}">{{ child.title }}</a>{% if child.summary %} - {{ child.summary }}{% endif %}
-    <script src="https://ajax.proxy.ustclug.org/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!--<script src="https://ajax.proxy.ustclug.org/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script>
     $.get("https://api.github.com/repos/liubanlaobanzhang/study-together-docs/commits?path={{ child.url }}", function(data) {
       var last_updated = data[0].commit.author.date;
@@ -37,7 +37,7 @@
       $("#update-time").text(local_time);
     });
     </script>
-    <a id="update-time"></a>
+    <a id="update-time"></a>-->
   </li>
 {% endfor %}
 </ul>
