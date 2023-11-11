@@ -19,17 +19,17 @@
     </button>
   </div>
 
-  <!--倒计时模块-->
+  <!--倒计时模块
   <script>
     var targetDateA = new Date("Nov 16, 2023 00:00:00").getTime();
     var x = setInterval(function() {
       var now = new Date().getTime();
       var distanceA = targetDateA - now;
       var daysA = Math.floor(distanceA / (1000 * 60 * 60 * 24))+1;
-      document.getElementById("countdownaSide").innerHTML = daysA + " 天";
+      document.getElementById("countdownaSide").innerHTML = daysAA + " 天";
       if (distanceA < 0) {
         clearInterval(x);
-        document.getElementById("countdownaSide").innerHTML = ""
+        document.getElementById("countdownaSide").innerHTML = "今天期中考试"
       }
     }, 1000);
     </script>    
@@ -46,9 +46,10 @@
       }
     }, 1000);
     </script>
+-->
 
   <nav aria-label="Main" id="site-nav" class="site-nav">
-    <div align="center"><a id="countdownaSide" class="label label-green"></a><a id="countdownSide" class="label label-blue"></a></div>
+    <div align="center"><a id="countdownSideA" class="label label-green"></a><a id="countdownSideB" class="label label-blue"></a></div>
     {% assign pages_top_size = site.html_pages
           | where_exp:"item", "item.title != nil"
           | where_exp:"item", "item.parent == nil"
