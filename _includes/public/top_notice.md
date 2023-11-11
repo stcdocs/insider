@@ -16,7 +16,7 @@ var x = setInterval(function() {
   if (distanceA < 0) {
     clearInterval(x);
     document.getElementById("countdowna").innerHTML = daysA + "2023 高一上期中检测 正在进行";
-    document.getElementById("countdownSidea").innerHTML = daysA + "期中检测正在进行";
+    document.getElementById("countdownSideA").innerHTML = daysA + "期中检测正在进行";
   }
 }, 207);
 </script>

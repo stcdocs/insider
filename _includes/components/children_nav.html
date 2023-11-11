@@ -22,12 +22,20 @@
   {%- endif -%}
 {%- endif -%}
 
+<script src="https://ajax.proxy.ustclug.org/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script>
+$.get("https://api.github.com/repos/liubanlaobanzhang/study-together-docs/commits?path={{ child.url }}", function(data) {
+  var last_updated = data[0].commit.author.date;
+  var local_time = new Date(last_updated).toLocaleString();
+  $("#update-time").text(local_time);
+});
+</script>
 <hr>
 {% include toc_heading_custom.html %}
 <ul>
 {% for child in sorted_pages %}
   <li>
-    <a href="{{ child.url | relative_url }}">{{ child.title }}</a>{% if child.summary %} - {{ child.summary }}{% endif %}
+    <a href="{{ child.url | relative_url }}">{{ child.title }}{{ child.url }}</a><a id="update-time"></p>{% if child.summary %} - {{ child.summary }}{% endif %}
   </li>
 {% endfor %}
 </ul>

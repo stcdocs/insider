@@ -26,8 +26,7 @@ var x = setInterval(function() {
 > 选科建议 [点击查看>>](/study-together-docs/docs/notice/32765-选科建议公告.html)
 
 {: .blue-title }
-> 置顶二维码
+> 公告（预发布）
 >
-> 更新内容：
-> - [必修一政治提纲（电子版）](/study-together-docs/docs/topqr/政治提纲.html) _2023/10/29 王浩铭_
+> [合作社部分服务预停运公告](/study-together-docs/docs/notice/-1-Pre-%E5%90%88%E4%BD%9C%E7%A4%BE%E9%83%A8%E5%88%86%E6%9C%8D%E5%8A%A1%E9%A2%84%E5%81%9C%E8%BF%90%E5%85%AC%E5%91%8A.html)
 
