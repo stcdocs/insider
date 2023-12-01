@@ -49,7 +49,8 @@
 -->
 
   <nav aria-label="Main" id="site-nav" class="site-nav">
-    <div align="center"><a id="countdownSideA" class="label label-green"></a><a id="countdownSideB" class="label label-blue"></a></div>
+    {% include public/timer.md %}
+    <div align="center"><a id="countdownSideA" class="label label-green"></a><a id="countdownSideB" class="label label-green"></a><a id="countdownSideGK" class="label label-blue"></a></div>
     {% assign pages_top_size = site.html_pages
           | where_exp:"item", "item.title != nil"
           | where_exp:"item", "item.parent == nil"
