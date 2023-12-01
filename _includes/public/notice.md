@@ -2,7 +2,7 @@
 <script>
 var targetDateGK = new Date("Jun 7, 2026 00:09:00").getTime();
 var targetDateGKGK = new Date("Jun 7, 2026 00:00:00").getTime();
-var x = setInterval(function() {
+var GK = setInterval(function() {
   var now = new Date().getTime();
   var distanceGKGK = targetDateGKGK - now;
   var distanceGK = targetDateGK - now;

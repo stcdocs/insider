@@ -2,7 +2,7 @@
 <script>
 var targetDateA = new Date("Dec 25, 2023 00:09:00").getTime();
 var targetDateAA = new Date("Dec 25, 2023 00:00:00").getTime();
-var x = setInterval(function() {
+var A = setInterval(function() {
   var now = new Date().getTime();
   var distanceAA = targetDateAA - now;
   var distanceA = targetDateA - now;
@@ -25,7 +25,7 @@ var x = setInterval(function() {
 <script>
 var targetDateB = new Date("Jan 25, 2024 00:09:00").getTime();
 var targetDateBB = new Date("Jan 25, 2024 00:00:00").getTime();
-var x = setInterval(function() {
+var B = setInterval(function() {
   var now = new Date().getTime();
   var distanceBB = targetDateBB - now;
   var distanceB = targetDateB - now;
