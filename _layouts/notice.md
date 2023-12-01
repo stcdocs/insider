@@ -4,7 +4,7 @@ layout: table_wrappers
 
 <!DOCTYPE html>
 
-<html lang="{{ site.lang | default: 'en-US' }}">
+<html lang="{{ site.lang | default: 'zh-CN' }}">
 {% include head.html %}
 <body>
   <a class="skip-to-main" href="#main-content">Skip to main content</a>
@@ -16,7 +16,7 @@ layout: table_wrappers
       {% include components/breadcrumbs.html %}
       <div id="main-content" class="main-content">
         <main>
-          {% include public/top_notice.md %}
+          {% include public/top_notice.html %}
           {% if site.heading_anchors != false %}
             {% include vendor/anchor_headings.html html=content beforeHeading="true" anchorBody="<svg viewBox=\"0 0 16 16\" aria-hidden=\"true\"><use xlink:href=\"#svg-link\"></use></svg>" anchorClass="anchor-heading" anchorAttrs="aria-labelledby=\"%html_id%\"" %}
           {% else %}

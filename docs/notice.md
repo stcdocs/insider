@@ -8,5 +8,5 @@ title: 公告栏
 
 ## 置顶公告
 
-{% include public/top_notice.md %}
-{% include public/notice.md %}
+{% include public/top_notice.html %}
+{% include public/notice.html %}
