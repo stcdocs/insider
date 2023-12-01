@@ -1,2 +1,23 @@
-{% include public/timer.md %}
+<!--高考-->
+<script>
+var targetDateGK = new Date("Jun 7, 2026 00:09:00").getTime();
+var targetDateGKGK = new Date("Jun 7, 2026 00:00:00").getTime();
+var x = setInterval(function() {
+  var now = new Date().getTime();
+  var distanceGKGK = targetDateGKGK - now;
+  var distanceGK = targetDateGK - now;
+  var daysGKGK = Math.floor(distanceGKGK / (1000 * 60 * 60 * 24))+1 ;
+  var daysGK = Math.floor(distanceGK / (1000 * 60 * 60 * 24)) ;
+  var hoursGK = Math.floor((distanceGK % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)) + 24 * daysGK;
+  var minsGK = Math.floor((distanceGK % (1000 * 60 * 60)) / (1000 * 60));
+  var secondGK = Math.floor((distanceGK % (1000 * 60)) / 1000);
+  var msecondGK = Math.floor(distanceGK % 1000);
+  document.getElementGKyId("countdownGK").innerHTML ="距离 2026 高考 " + daysGKGK + " 天（" + hoursGK + ":" + minsGK + ":" + secondGK+ ":" + msecondGK +"）";
+  document.getElementGKyId("countdownSideGK").innerHTML ="高考 | " + daysGKGK + " 天";
+  if (distanceGK < 0) {
+    clearInterval(x);
+    document.getElementGKyId("countdownGK").innerHTML = "祝高考顺利！";
+  }
+}, 73);
+</script>
 <blockquote class="note-title"><a id="countdownGK"></a></blockquote>
