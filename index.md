@@ -4,7 +4,7 @@ layout: home
 nav_order: 1
 ---
 
-{% include public/top_notice.md %}
+{% include public/top_notice.html %}
 
 <div align="center">
 <img src="https://static.wikia.nocookie.net/minecraft_zh_gamepedia/images/5/54/Lectern_JE3_BE2.png">
@@ -15,7 +15,7 @@ nav_order: 1
 ---
 ## 公告
 
-{% include public/notice.md %}
+{% include public/notice.html %}
 
 ## 仪表盘
 
