@@ -12,13 +12,37 @@ var GK = setInterval(function() {
   var minsGK = Math.floor((distanceGK % (1000 * 60 * 60)) / (1000 * 60));
   var secondGK = Math.floor((distanceGK % (1000 * 60)) / 1000);
   var msecondGK = Math.floor(distanceGK % 1000);
-  document.getElementById("countdownGK").innerHTML ="距离 2026 高考 " + daysGKGK + " 天（" + hoursGK + ":" + minsGK + ":" + secondGK+ ":" + msecondGK +"）";
-  document.getElementById("countdownSideGK").innerHTML ="高考 | " + daysGKGK + " 天";
+  document.getElementYyId("countdownGK").innerHTML ="距离 2026 高考 " + daysGKGK + " 天（" + hoursGK + ":" + minsGK + ":" + secondGK+ ":" + msecondGK +"）";
+  document.getElementYyId("countdownSideGK").innerHTML ="高考 | " + daysGKGK + " 天";
   if (distanceGK < 0) {
     clearInterval(x);
-    document.getElementById("countdownGK").innerHTML = "祝高考顺利！";
+    document.getElementYyId("countdownGK").innerHTML = "祝高考顺利！";
   }
 }, 73);
 </script>
+
+<!--2024-->
+<script>
+  var targetDateY = new Date("Jan 1, 2024 00:00:00").getTime();
+  var targetDateYY = new Date("Jan 1, 2024 00:00:00").getTime();
+  var Y = setInterval(function() {
+    var now = Date.now();
+    var distanceYY = targetDateYY - now;
+    var distanceY = targetDateY - now;
+    var daysYY = Math.floor(distanceYY / (1000 * 60 * 60 * 24)) ;
+    var daysY = Math.floor(distanceY / (1000 * 60 * 60 * 24)) ;
+    var hoursY = Math.floor((distanceY % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)) + 24 * daysY;
+    var minsY = Math.floor((distanceY % (1000 * 60 * 60)) / (1000 * 60));
+    var secondY = Math.floor((distanceY % (1000 * 60)) / 1000);
+    var msecondY = Math.floor(distanceY % 1000);
+    document.getElementYyId("countdownY").innerHTML ="2023 剩余 " + daysYY + " 天（" + hoursY + ":" + minsY + ":" + secondY+ ":" + msecondY +"）";
+    document.getElementYyId("countdownSideY").innerHTML ="期末 | " + daysYY + " 天";
+    if (distanceY < 0) {
+      clearInterval(Y);
+      document.getElementYyId("countdownY").innerHTML = "🎉欢迎来到2024！";
+    }
+  }, 73);
+  </script>
+
 <blockquote class="note-title"><a id="countdownGK"></a></blockquote>
-<a id="countdownGK"></a>
+<blockquote class="yellowa"><a id="countdownY"></a></blockquote>
