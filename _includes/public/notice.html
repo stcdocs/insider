@@ -13,6 +13,10 @@ var GK = setInterval(function() {
   var secondGK = Math.floor((distanceGK % (1000 * 60)) / 1000);
   var msecondGK = Math.floor(distanceGK % 1000);
   document.getElementById("countdownGK").innerHTML ="距离 2026 高考 " + daysGKGK + " 天（" + hoursGK + ":" + minsGK + ":" + secondGK+ ":" + msecondGK +"）";
+  if (distanceY < 259200264) {
+      clearInterval(Y);
+      document.getElementById("countdownY").innerHTML = "放轻松，不要紧张。最终冲刺，祝你成功！ | " + daysGKGK + " 天（" + hoursGK + ":" + minsGK + ":" + secondGK+ ":" + msecondGK +"）";
+    }
   if (distanceGK < 0) {
     clearInterval(x);
     document.getElementById("countdownGK").innerHTML = "祝高考顺利！";
