@@ -13,7 +13,6 @@ var GK = setInterval(function() {
   var secondGK = Math.floor((distanceGK % (1000 * 60)) / 1000);
   var msecondGK = Math.floor(distanceGK % 1000);
   document.getElementById("countdownGK").innerHTML ="距离 2026 高考 " + daysGKGK + " 天（" + hoursGK + ":" + minsGK + ":" + secondGK+ ":" + msecondGK +"）";
-  document.getElementById("countdownSideGK").innerHTML ="高考 | " + daysGKGK + " 天";
   if (distanceGK < 0) {
     clearInterval(x);
     document.getElementById("countdownGK").innerHTML = "祝高考顺利！";
@@ -36,7 +35,6 @@ var GK = setInterval(function() {
     var secondY = Math.floor((distanceY % (1000 * 60)) / 1000);
     var msecondY = Math.floor(distanceY % 1000);
     document.getElementById("countdownY").innerHTML ="2023 剩余 " + daysYY + " 天（" + hoursY + ":" + minsY + ":" + secondY+ ":" + msecondY +"）";
-    document.getElementById("countdownSideY").innerHTML ="期末 | " + daysYY + " 天";
     if (distanceY < 0) {
       clearInterval(Y);
       document.getElementById("countdownY").innerHTML = "🎉欢迎来到2024！";
