@@ -12,7 +12,7 @@ var A = setInterval(function() {
   var minsA = Math.floor((distanceA % (1000 * 60 * 60)) / (1000 * 60));
   var secondA = Math.floor((distanceA % (1000 * 60)) / 1000);
   var msecondA = Math.floor(distanceA % 1000);
-  document.getElementById("countdownA").innerHTML ="距离 2023 年 12 月 高一选科指导测试还有 " + daysAA + " 天（" + hoursA + ":" + minsA + ":" + secondA+ ":" + msecondA +"）";
+  document.getElementById("countdownA").innerHTML ="距离 2023 年 12 月 高一选科指导测试还有 " + daysAA + " 天（" + hoursA + ":" + minsA + ":" + secondA+ "." + msecondA +"）";
   if (distanceA < 0) {
     clearInterval(A);
     document.getElementById("countdownA").innerHTML = "此倒计时已结束，祝考试顺利。";
@@ -34,7 +34,7 @@ var B = setInterval(function() {
   var minsB = Math.floor((distanceB % (1000 * 60 * 60)) / (1000 * 60));
   var secondB = Math.floor((distanceB % (1000 * 60)) / 1000);
   var msecondB = Math.floor(distanceB % 1000);
-  document.getElementById("countdownB").innerHTML ="距离 2024 年 1 月 高一期末考试还有 " + daysBB + " 天（" + hoursB + ":" + minsB + ":" + secondB+ ":" + msecondB +"）";
+  document.getElementById("countdownB").innerHTML ="距离 2024 年 1 月 高一期末考试还有 " + daysBB + " 天（" + hoursB + ":" + minsB + ":" + secondB+ "." + msecondB +"）";
   if (distanceB < 0) {
     clearInterval(B);
     document.getElementById("countdownB").innerHTML = "此倒计时已结束，祝考试顺利。";
