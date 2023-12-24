@@ -1,6 +1,6 @@
 <!--高考-->
 <script>
-var targetDateGK = new Date("Jun 7, 2026 00:09:00").getTime();
+var targetDateGK = new Date("Jun 7, 2026 09:00:00").getTime();
 var targetDateGKGK = new Date("Jun 7, 2026 00:00:00").getTime();
 var GK = setInterval(function() {
   var now = Date.now();
@@ -13,7 +13,7 @@ var GK = setInterval(function() {
   var secondGK = Math.floor((distanceGK % (1000 * 60)) / 1000);
   var msecondGK = Math.floor(distanceGK % 1000);
   document.getElementById("countdownGK").innerHTML ="距离 2026 高考 " + daysGKGK + " 天（" + hoursGK + ":" + minsGK + ":" + secondGK+ ":" + msecondGK +"）";
-  if (distanceY < 259200264) {
+  if (distanceGK < 259200264) {
       clearInterval(Y);
       document.getElementById("countdownY").innerHTML = "放轻松，不要紧张。最终冲刺，祝你成功！ | " + daysGKGK + " 天（" + hoursGK + ":" + minsGK + ":" + secondGK+ ":" + msecondGK +"）";
     }
@@ -26,7 +26,7 @@ var GK = setInterval(function() {
 
 <!--2024-->
 <script>
-  var targetDateY = new Date("Jan 1, 2024 00:00:00").getTime();
+  var targetDateY = new Date("Jan 1, 2024 09:00:00").getTime();
   var targetDateYY = new Date("Jan 1, 2024 00:00:00").getTime();
   var Y = setInterval(function() {
     var now = Date.now();
