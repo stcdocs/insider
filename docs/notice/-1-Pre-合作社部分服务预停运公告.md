@@ -2,7 +2,7 @@
 layout: default
 title: 合作社部分服务预停运公告
 parent: 公告栏
-nav_order: -1
+nav_order: 25
 ---
 
 # 合作社部分服务预停运公告
