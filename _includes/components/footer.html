@@ -19,7 +19,7 @@
         {% endif %}
         <script src="https://ajax.proxy.ustclug.org/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
         <script>
-        $.get("https://api.github.com/repos/liubanlaobanzhang/study-together-docs/commits?path={{ page.path }}", function(data) {
+        $.get("https://api.github.com/repos/stcdocs/stcdocs.github.io/commits?path={{ page.path }}", function(data) {
           var last_updated = data[0].commit.author.date;
           var local_time = new Date(last_updated).toLocaleString();
           $("#update-time").text("此页面最近更新时间：" + local_time);

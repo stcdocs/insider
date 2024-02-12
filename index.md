@@ -24,4 +24,4 @@ nav_order: 1
 |总服务|*Main.Svc*|✅|
 | “市北内卷合作社”聊天群|*Chat.Svc*|✅|
 |市北内卷出版社|*Publisher.Svc*|✅|
-|合作社主页|*Project.Svc*|[![合作社主页部署](https://github.com/liubanlaobanzhang/study-together-docs/actions/workflows/pages.yml/badge.svg)](https://github.com/liubanlaobanzhang/study-together-docs/actions/workflows/pages.yml)|
+|合作社主页|*Project.Svc*|[![合作社主页部署](https://github.com/stcdocs/stcdocs.github.io/actions/workflows/pages.yml/badge.svg)](https://github.com/stcdocs/stcdocs.github.io/actions/workflows/pages.yml)|
